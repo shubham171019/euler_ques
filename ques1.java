@@ -1,27 +1,14 @@
-import java.util.*;
-
-
-
 public class ques1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		int A[]= new int [10000];
-		for(int i=0;i<=1000;i++)
+		int s=0;
+		for (int i=1;i<1000;i++)
 		{
-			if(i%3==0 || i%5==0)
-			{
-				A[i]=i;
-			}
+			if((i%5==0) || (i%3==0))
+			s=s+i;
 		}
-		int sum=0;
-		for (int j=0;j<1000;j++)
-		{
-			sum= sum+ A[j];
-		}
-		System.out.println(sum);
-
+		System.out.println(s);
 	}
 
 }
