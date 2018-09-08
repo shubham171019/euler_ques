@@ -10,7 +10,7 @@ public class ques6 {
 			x=x+i;
 			y=y+(i*i);
 		}
-		x=x*y;
+		x=x*x;
 		System.out.println(x-y);
 	}
 
