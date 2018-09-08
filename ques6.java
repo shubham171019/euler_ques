@@ -7,10 +7,10 @@ public class ques6 {
 		int x=0,y=0;
 		for(int i=1;i<=100;i++)
 		{
-			x+=i;
-			y+=(i*i);
+			x=x+i;
+			y=y+(i*i);
 		}
-		x*=y;
+		x=x*y;
 		System.out.println(x-y);
 	}
 
