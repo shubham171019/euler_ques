@@ -1,34 +1,29 @@
-
-public class test {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-
-	    long sum = 0;
-
-	    for (int i = 2; i < 2000000; i++) {
-	        boolean isPrime = true;
-
-	        if ((i % 2 == 0 || i % 3 == 0) && (i!=2 || i!=3 || i!=5)) {
-	            isPrime = false;
-	        } else {
-	            for (int j = 5; j <= Math.sqrt(i); j = j + 6) {
-	                if (i % j == 0 || i % (j + 2) == 0) {
-	                    isPrime = false;
-	                    break;
-	                }
-	            }
-	        }
-
-	        if (isPrime == true) {
-	            sum += i;
-	        }
-	    }
-
-	    System.out.println(sum);
-	   
-	}
-	}
-
-
+public class ques10
+{
+   static boolean primecheck(long n)
+    {
+        boolean status = true;
+        for (int i = 3; i<=Math.sqrt(n);i+=2)
+        {
+            if (n%i==0)
+            {
+                status=false;
+                break;
+            }
+        }
+        return status;
+    }
+    public static void main(String args[])
+    {
+        
+        long sum = 2;
+        for(long i = 3 ;i<=2000000;i+=2)
+        {
+            if(primecheck(i))
+            {
+                sum = sum +i;
+            }
+        }
+        System.out.println(sum); 
+   }
+}
