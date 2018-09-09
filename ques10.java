@@ -3,17 +3,17 @@ public class ques10 {
 
 	public static void main(String[] args) {
 		
-		int s= 0;
-		for (int i=1;i<2000000;i++)
+		long s= 2;
+		for (long i=3;i<2000000;i=i+2)
 		{
 			int k=0;
-			for(int j=1;j<i;j++)
+			for(long j=2;j<Math.sqrt(i);j++)
 			{
 				if(i%j==0)
 					k++;
 				
 			}
-			if(k==1)
+			if(k==0)
 				s+=i;
 			
 		}
@@ -21,5 +21,4 @@ public class ques10 {
 }
 
 	}
-
 
