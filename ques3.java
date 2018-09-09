@@ -1,5 +1,4 @@
 // prime factor
-import java.util.*;
 
 public class ques3 {
 
